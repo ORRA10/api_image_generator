@@ -12,7 +12,7 @@ registerFont('./fonts/TTCommons-Black.ttf', { family: 'TT Commons Black'})
 module.exports = function (app, db) {
     app.get('/api', (req, res) => {
 
-        const { number, name, lastname, phone, price = '50&thinsp;000' , date = moment().format("DD.MM.YY") } = req.query
+        const { number, name, lastname, phone, price = '50 000' , date = moment().format("DD.MM.YY") } = req.query
 
         const canvas = createCanvas(1280, 1280)
         const ctx = canvas.getContext('2d')
@@ -55,7 +55,7 @@ module.exports = function (app, db) {
         ctx.font =  '295px "TT Commons Black"' //'normal normal 50px Roboto-Bold'
         ctx.shadowColor = 'rgba(0, 0, 0, 0.0)'
         ctx.fillStyle = "#FFF"
-        ctx.fillText(`${price}₽`, 83, 833)
+        ctx.fillText(`${price}₽`, 74, 839)
         console.log(ctx.font);
 
         // const text = ctx.measureText(`Билет: ${number}, ${name} ${lastname}, телефон: ${phone}`)
