@@ -45,7 +45,7 @@ module.exports = function (app, db) {
 
         ctx.font =  '70px "TT Commons Bold"' //'normal normal 50px Roboto-Bold'
         ctx.fillStyle = "#FFF"
-        ctx.fillText(`#${number}`, 612, 390)
+        ctx.fillText(`#${number}`, 578, 390)
         console.log(ctx.font);
 
         ctx.font =  '120px "TT Commons Black"' //'normal normal 50px Roboto-Bold'
@@ -58,7 +58,7 @@ module.exports = function (app, db) {
         ctx.fillText(`+7 (***) *** **-${phone}`, 104, 597)
         console.log(ctx.font);
 
-        ctx.font =  '280px "TT Commons Black"' //'normal normal 50px Roboto-Bold'
+        ctx.font =  '295px "TT Commons Black"' //'normal normal 50px Roboto-Bold'
         ctx.shadowColor = 'rgba(0, 0, 0, 0.0)'
         ctx.fillStyle = "#FFF"
         ctx.fillText(`${price}₽`, 83, 833)
