@@ -7,6 +7,10 @@ registerFont('./fonts/Inter-Medium.ttf', { family: 'Inter', weight: 'Medium'  })
 registerFont('./fonts/Inter-Bold.ttf', { family: 'Inter', weight: 'Bold'  })
 registerFont('./fonts/Inter-Black.ttf', { family: 'Inter', weight: 'Black'  })
 
+registerFont('./fonts/TTCommons-Medium.ttf', { family: 'TT Commons Medium'})
+registerFont('./fonts/TTCommons-Bold.ttf', { family: 'TT Commons Bold'})
+registerFont('./fonts/TTCommons-Black.ttf', { family: 'TT Commons Black'})
+
 
 
 module.exports = function (app, db) {
@@ -29,7 +33,7 @@ module.exports = function (app, db) {
         ctx.shadowColor = 'rgba(0, 0, 0, 0.24)'
 
         // Write Awesome!
-        ctx.font =  'Medium 42px "Inter"' //'normal normal 50px Roboto-Bold'
+        ctx.font =  '42px "TT Commons Bold"' //'normal normal 50px Roboto-Bold'
         ctx.fillStyle = "#FFF"
         ctx.fillText(date,1040,130)
         console.log(ctx.font);
