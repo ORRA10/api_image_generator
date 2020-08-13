@@ -3,9 +3,9 @@ const fs = require('fs')
 const path = require('path')
 const moment = require('moment');
 
-//registerFont('./fonts/Inter-Bold.ttf', { family: 'Inter-Bold' })
-//registerFont('./fonts/Inter-Black.ttf', { family: 'Inter-Black' })
-registerFont('./fonts/Inter-VariableFont_slnt,wght.ttf', { family: 'Inter' })
+registerFont('./fonts/Inter-Medium.ttf', { family: 'Inter', weight: 'Medium'  })
+registerFont('./fonts/Inter-Bold.ttf', { family: 'Inter', weight: 'Bold'  })
+registerFont('./fonts/Inter-Black.ttf', { family: 'Inter', weight: 'Black'  })
 
 
 
@@ -29,32 +29,32 @@ module.exports = function (app, db) {
         ctx.shadowColor = 'rgba(0, 0, 0, 0.24)'
 
         // Write Awesome!
-        ctx.font =  '500 42px "Inter"' //'normal normal 50px Roboto-Bold'
+        ctx.font =  'Medium 42px "Inter"' //'normal normal 50px Roboto-Bold'
         ctx.fillStyle = "#FFF"
         ctx.fillText(date,1040,130)
         console.log(ctx.font);
 
-        ctx.font =  '500 70px "Inter"' //'normal normal 50px Roboto-Bold'
+        ctx.font =  'Medium 70px "Inter"' //'normal normal 50px Roboto-Bold'
         ctx.fillStyle = "#FFF"
         ctx.fillText(`Победитель дня`, 90, 390)
         console.log(ctx.font);
 
-        ctx.font =  '500 70px "Inter"' //'normal normal 50px Roboto-Bold'
+        ctx.font =  'Bold 70px "Inter"' //'normal normal 50px Roboto-Bold'
         ctx.fillStyle = "#FFF"
         ctx.fillText(`#${number}`, 640, 390)
         console.log(ctx.font);
 
-        ctx.font =  '900 120px "Inter"' //'normal normal 50px Roboto-Bold'
+        ctx.font =  'Black 120px "Inter"' //'normal normal 50px Roboto-Bold'
         ctx.fillStyle = "#FFF"
         ctx.fillText(`${lastname.capitalize()}. ${name.capitalize()}`, 90, 510)
         console.log(ctx.font);
 
-        ctx.font =  '500 70px "Inter"' //'normal normal 50px Roboto-Bold'
+        ctx.font =  'Medium 70px "Inter"' //'normal normal 50px Roboto-Bold'
         ctx.fillStyle = "#FFF"
         ctx.fillText(`+7 (***) *** **-${phone}`, 90, 600)
         console.log(ctx.font);
 
-        ctx.font =  '900 280px "Inter"' //'normal normal 50px Roboto-Bold'
+        ctx.font =  'Black 280px "Inter"' //'normal normal 50px Roboto-Bold'
         ctx.shadowColor = 'rgba(0, 0, 0, 0.0)'
         ctx.fillStyle = "#FFF"
         ctx.fillText(`${price}₽`, 70, 850)
