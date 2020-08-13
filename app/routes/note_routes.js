@@ -18,7 +18,7 @@ module.exports = function (app, db) {
         const ctx = canvas.getContext('2d')
 
         // Draw cat with lime helmet
-        loadImage('./img/template_test.png').then((image) => {
+        loadImage('./img/template.png').then((image) => {
             ctx.drawImage(image, 0, 0, 1280, 1280)
 
         ctx.shadowBlur = 17
