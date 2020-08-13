@@ -38,27 +38,27 @@ module.exports = function (app, db) {
         ctx.fillText(date,1040,130)
         console.log(ctx.font);
 
-        ctx.font =  'Medium 70px "Inter"' //'normal normal 50px Roboto-Bold'
+        ctx.font =  '70px "TT Commons Medium"' //'normal normal 50px Roboto-Bold'
         ctx.fillStyle = "#FFF"
         ctx.fillText(`Победитель дня`, 90, 390)
         console.log(ctx.font);
 
-        ctx.font =  'Bold 70px "Inter"' //'normal normal 50px Roboto-Bold'
+        ctx.font =  '70px "TT Commons Bold"' //'normal normal 50px Roboto-Bold'
         ctx.fillStyle = "#FFF"
         ctx.fillText(`#${number}`, 640, 390)
         console.log(ctx.font);
 
-        ctx.font =  'Black 120px "Inter"' //'normal normal 50px Roboto-Bold'
+        ctx.font =  '120px "TT Commons Black"' //'normal normal 50px Roboto-Bold'
         ctx.fillStyle = "#FFF"
         ctx.fillText(`${lastname.capitalize()}. ${name.capitalize()}`, 90, 510)
         console.log(ctx.font);
 
-        ctx.font =  'Medium 70px "Inter"' //'normal normal 50px Roboto-Bold'
+        ctx.font =  '70px "TT Commons Medium"' //'normal normal 50px Roboto-Bold'
         ctx.fillStyle = "#FFF"
         ctx.fillText(`+7 (***) *** **-${phone}`, 90, 600)
         console.log(ctx.font);
 
-        ctx.font =  'Black 280px "Inter"' //'normal normal 50px Roboto-Bold'
+        ctx.font =  '280px "TT Commons Black"' //'normal normal 50px Roboto-Bold'
         ctx.shadowColor = 'rgba(0, 0, 0, 0.0)'
         ctx.fillStyle = "#FFF"
         ctx.fillText(`${price}₽`, 70, 850)
