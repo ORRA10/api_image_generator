@@ -3,10 +3,6 @@ const fs = require('fs')
 const path = require('path')
 const moment = require('moment');
 
-registerFont('./fonts/Inter-Medium.ttf', { family: 'Inter', weight: 'Medium'  })
-registerFont('./fonts/Inter-Bold.ttf', { family: 'Inter', weight: 'Bold'  })
-registerFont('./fonts/Inter-Black.ttf', { family: 'Inter', weight: 'Black'  })
-
 registerFont('./fonts/TTCommons-Medium.ttf', { family: 'TT Commons Medium'})
 registerFont('./fonts/TTCommons-Bold.ttf', { family: 'TT Commons Bold'})
 registerFont('./fonts/TTCommons-Black.ttf', { family: 'TT Commons Black'})
@@ -16,9 +12,7 @@ registerFont('./fonts/TTCommons-Black.ttf', { family: 'TT Commons Black'})
 module.exports = function (app, db) {
     app.get('/api', (req, res) => {
 
-        const { number, name, lastname, phone, price = '50 000' , date = moment().format("DD.MM.YY") } = req.query
-
-
+        const { number, name, lastname, phone, price = '50&thinsp;000' , date = moment().format("DD.MM.YY") } = req.query
 
         const canvas = createCanvas(1280, 1280)
         const ctx = canvas.getContext('2d')
@@ -63,6 +57,7 @@ module.exports = function (app, db) {
         ctx.fillStyle = "#FFF"
         ctx.fillText(`${price}₽`, 83, 833)
         console.log(ctx.font);
+
         // const text = ctx.measureText(`Билет: ${number}, ${name} ${lastname}, телефон: ${phone}`)
         // ctx.strokeStyle = 'rgba(0,0,0,0.5)'
         // ctx.beginPath()
