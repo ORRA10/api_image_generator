@@ -35,33 +35,33 @@ module.exports = function (app, db) {
         // Write Awesome!
         ctx.font =  '42px "TT Commons Bold"' //'normal normal 50px Roboto-Bold'
         ctx.fillStyle = "#FFF"
-        ctx.fillText(date,1040,130)
+        ctx.fillText(date,1050,130)
         console.log(ctx.font);
 
         ctx.font =  '70px "TT Commons Medium"' //'normal normal 50px Roboto-Bold'
         ctx.fillStyle = "#FFF"
-        ctx.fillText(`Победитель дня`, 90, 390)
+        ctx.fillText(`Победитель дня`, 92, 390)
         console.log(ctx.font);
 
         ctx.font =  '70px "TT Commons Bold"' //'normal normal 50px Roboto-Bold'
         ctx.fillStyle = "#FFF"
-        ctx.fillText(`#${number}`, 640, 390)
+        ctx.fillText(`#${number}`, 612, 390)
         console.log(ctx.font);
 
         ctx.font =  '120px "TT Commons Black"' //'normal normal 50px Roboto-Bold'
         ctx.fillStyle = "#FFF"
-        ctx.fillText(`${lastname.capitalize()}. ${name.capitalize()}`, 90, 510)
+        ctx.fillText(`${lastname.capitalize()}. ${name.capitalize()}`, 90, 508)
         console.log(ctx.font);
 
         ctx.font =  '70px "TT Commons Medium"' //'normal normal 50px Roboto-Bold'
         ctx.fillStyle = "#FFF"
-        ctx.fillText(`+7 (***) *** **-${phone}`, 90, 600)
+        ctx.fillText(`+7 (***) *** **-${phone}`, 104, 597)
         console.log(ctx.font);
 
         ctx.font =  '280px "TT Commons Black"' //'normal normal 50px Roboto-Bold'
         ctx.shadowColor = 'rgba(0, 0, 0, 0.0)'
         ctx.fillStyle = "#FFF"
-        ctx.fillText(`${price}₽`, 70, 850)
+        ctx.fillText(`${price}₽`, 83, 833)
         console.log(ctx.font);
         // const text = ctx.measureText(`Билет: ${number}, ${name} ${lastname}, телефон: ${phone}`)
         // ctx.strokeStyle = 'rgba(0,0,0,0.5)'
