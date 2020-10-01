@@ -6,7 +6,7 @@ const moment = require('moment');
 registerFont('./fonts/TTCommons-Medium.ttf', { family: 'TT Commons Medium'})
 registerFont('./fonts/TTCommons-Bold.ttf', { family: 'TT Commons Bold'})
 registerFont('./fonts/TTCommons-Black.ttf', { family: 'TT Commons Black'})
-
+registerFont('./fonts/Roboto-Medium.ttf', { family: 'Roboto Medium'})
 
 
 module.exports = function (app, db) {
