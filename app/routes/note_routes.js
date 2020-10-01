@@ -70,8 +70,33 @@ module.exports = function (app, db) {
 
             res.sendFile(path.resolve('img/res.png'))
         })
+    },
+    app.get('/apikauto', (req, res) => {
+
+        const { date,type } = req.query
+
+        const canvas = createCanvas(1080, 1920)
+        const ctx = canvas.getContext('2d')
+        
+
+        // Draw cat with lime helmet
+        loadImage(`./img/${type}.jpg`).then((image) => {
+            ctx.drawImage(image, 0, 0, 1080, 1920)
+
+        // Write Awesome!
+        ctx.font =  '130px "Roboto Medium"' //'normal normal 50px Roboto-Bold'
+        ctx.fillStyle = "#333"
+        ctx.fillText(date,75,420)
+        console.log(ctx.font);
+
+
+            const buffer = canvas.toBuffer('image/png')
+            fs.writeFileSync('./img/res.png', buffer)
+
+            res.sendFile(path.resolve('img/res.png'))
+        })
     })
-}
+    )}
 
 String.prototype.capitalize = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
